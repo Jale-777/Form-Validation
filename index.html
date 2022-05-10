@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" action="/">
+        <h1>Get in touch with us today</h1>
+        <div class="input-control">
+          <label class="label" for="username">* What's your name?</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            placeholder="Full name"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label class="label" for="business">* Who do you work for?</label>
+          <input
+            id="business"
+            name="business"
+            type="text"
+            placeholder="Company name"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label class="label" for="phoneNum"
+            >* Most convenient phone number to call you on:</label
+          >
+          <input
+            id="phoneNum"
+            name="phoneNum"
+            type="text"
+            placeholder="e.g. +44 XXXX XXXX"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label class="label" for="email"
+            >* Best email address to contact you on:</label
+          >
+          <input
+            id="email"
+            name="email"
+            type="text"
+            placeholder="Email address"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label class="label" for="text"
+            >* Tell us what you'd like to know about:</label
+          >
+          <input id="text" name="text" type="text" placeholder="Tell us more" />
+          <div class="error"></div>
+        </div>
+        <button type="submit">Send your message</button>
+      </form>
+    </div>
+  </body>
+</html>
